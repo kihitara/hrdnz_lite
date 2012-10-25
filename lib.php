@@ -1,13 +1,13 @@
 <?php
 
-function hrdnz_process_css($css, $theme) {
+function hrdnz_lite_process_css($css, $theme) {
  
     if (!empty($theme->settings->customcss)) {
         $customcss = $theme->settings->customcss;
     } else {
         $customcss = null;
     }
-    $css = hrdnz_set_customcss($css, $customcss);
+    $css = hrdnz_lite_set_customcss($css, $customcss);
  
     return $css;
 }
@@ -19,7 +19,7 @@ function hrdnz_process_css($css, $theme) {
  * @param mixed $customcss
  * @return string
  */
-function hrdnz_set_customcss($css, $customcss) {
+function hrdnz_lite_set_customcss($css, $customcss) {
     $tag = '[[setting:customcss]]';
     $replacement = $customcss;
     if (is_null($replacement)) {

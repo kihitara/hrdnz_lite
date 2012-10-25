@@ -2,7 +2,7 @@
 
 // Name of the theme's folder
 
-$THEME->name = 'hrdnz';
+$THEME->name = 'hrdnz_lite';
 
 // Parent style sheets
 
@@ -22,7 +22,7 @@ $THEME->enable_dock = true;
 
 // CSS Post Process
 
-$THEME->csspostprocess = 'hrdnz_process_css';
+$THEME->csspostprocess = 'hrdnz_lite_process_css';
 
 // Custom renderer factory
 
@@ -39,38 +39,38 @@ $THEME->layouts = array(
     // Standard layout with blocks, this is recommended for most pages with general information
     'standard' => array(
         'file' => 'general.php',
-        'regions' => array('side-pre','block-top-left','block-top-midlt','block-top-midrt','block-top-right','block-btm-left','block-btm-midlt','block-btm-midrt','block-btm-right'),
+        'regions' => array('side-pre'),
         'defaultregion' => 'side-pre',
     ),
     // Main course page
     'course' => array(
         'file' => 'general.php',
-        'regions' => array('side-pre','block-top-left','block-top-midlt','block-top-midrt','block-top-right','block-btm-left','block-btm-midlt','block-btm-midrt','block-btm-right'),
+        'regions' => array('side-pre'),
         'defaultregion' => 'side-pre',
         'options' => array('langmenu'=>true),
     ),
     // Grades page
     'report' => array(
         'file' => 'general.php',
-        'regions' => array('side-pre','block-top-left','block-top-midlt','block-top-midrt','block-top-right','block-btm-left','block-btm-midlt','block-btm-midrt','block-btm-right'),
+        'regions' => array('side-pre'),
         'defaultregion' => 'side-pre',
         'options' => array('nocustommenu'=>true),
     ),
     'coursecategory' => array(
         'file' => 'general.php',
-        'regions' => array('side-pre','block-top-left','block-top-midlt','block-top-midrt','block-top-right','block-btm-left','block-btm-midlt','block-btm-midrt','block-btm-right'),
+        'regions' => array('side-pre'),
         'defaultregion' => 'side-pre',
     ),
     // part of course, typical for modules - default page layout if $cm specified in require_login()
     'incourse' => array(
         'file' => 'general.php',
-        'regions' => array('side-pre','block-top-left','block-top-midlt','block-top-midrt','block-top-right','block-btm-left','block-btm-midlt','block-btm-midrt','block-btm-right'),
+        'regions' => array('side-pre'),
         'defaultregion' => 'side-pre',
     ),
     // The site home page.
     'frontpage' => array(
         'file' => 'frontpage.php',
-        'regions' => array('side-pre','block-top-left','block-top-midlt','block-top-midrt','block-top-right','block-btm-left','block-btm-midlt','block-btm-midrt','block-btm-right'),
+        'regions' => array('side-pre'),
         'defaultregion' => 'side-pre',
         'options' => array('nonavbar'=>true, 'langmenu'=>true),
     ),
@@ -83,14 +83,14 @@ $THEME->layouts = array(
     // My dashboard page
     'mydashboard' => array(
         'file' => 'general.php',
-        'regions' => array('side-pre','side-post','block-top-left','block-top-midlt','block-top-midrt','block-top-right','block-btm-left','block-btm-midlt','block-btm-midrt','block-btm-right'),
+        'regions' => array('side-pre','side-post'),
         'defaultregion' => 'side-pre',
         'options' => array('langmenu'=>true),
     ),
     // My public page
     'mypublic' => array(
         'file' => 'general.php',
-        'regions' => array('side-pre','side-post','block-top-left','block-top-midlt','block-top-midrt','block-top-right','block-btm-left','block-btm-midlt','block-btm-midrt','block-btm-right'),
+        'regions' => array('side-pre','side-post'),
         'defaultregion' => 'side-pre',
     ),
     'login' => array(

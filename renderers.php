@@ -1,6 +1,6 @@
 <?php
  
-class theme_hrdnz_core_renderer extends core_renderer {
+class theme_hrdnz_lite_core_renderer extends core_renderer {
 
 // --- Start of custom menu modifications --- //
  

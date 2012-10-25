@@ -14,7 +14,7 @@
 var featuredcontentslider={
 
 //3 variables below you can customize if desired:
-ajaxloadingmsg: '<div style="margin: 20px 0 0 20px"><img src="theme/hrdnz/pix/loading.gif" /> Fetching slider Contents. Please wait...</div>',
+ajaxloadingmsg: '<div style="margin: 20px 0 0 20px"><img src="theme/hrdnz_lite/pix/loading.gif" /> Fetching slider Contents. Please wait...</div>',
 bustajaxcache: true, //bust caching of external ajax page after 1st request?
 enablepersist: true, //persist to last content viewed when returning to page?
 

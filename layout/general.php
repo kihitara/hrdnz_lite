@@ -5,8 +5,6 @@ $hasnavbar = (empty($PAGE->layout_options['nonavbar']) && $PAGE->has_navbar());
 $hasfooter = (empty($PAGE->layout_options['nofooter']));
 $hassidepre = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->region_has_content('side-pre', $OUTPUT));
 $hassidepost = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->region_has_content('side-post', $OUTPUT));
-$hastopblocks = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->region_has_content('block-top-left', $OUTPUT) or $PAGE->blocks->region_has_content('block-top-midlt', $OUTPUT) or $PAGE->blocks->region_has_content('block-top-midrt', $OUTPUT) or  $PAGE->blocks->region_has_content('block-top-right', $OUTPUT));
-$hasbtmblocks = (empty($PAGE->layout_options['noblocks']) && $PAGE->blocks->region_has_content('block-btm-left', $OUTPUT) or $PAGE->blocks->region_has_content('block-btm-midlt', $OUTPUT) or $PAGE->blocks->region_has_content('block-btm-midrt', $OUTPUT) or  $PAGE->blocks->region_has_content('block-btm-right', $OUTPUT));
 
 $showsidepre = ($hassidepre && !$PAGE->blocks->region_completely_docked('side-pre', $OUTPUT));
 $showsidepost = ($hassidepost && !$PAGE->blocks->region_completely_docked('side-post', $OUTPUT));
@@ -127,76 +125,6 @@ echo $OUTPUT->doctype() ?>
         </div>
     </div>
 </div>
-
-    <!-- The four blocks added to the bottom of the page in the white zone -->
-    <?php if ($hastopblocks) { ?>
-		    <div id="topblockwrap">
-		    <div class="top-blocks">
-		    <div id="blocktopleft" class="block-region">
-		    <div class="region-content">
-                        <?php echo $OUTPUT->blocks_for_region('block-top-left') ?>
-                    </div>
-		    </div>
-		    </div>
-		    <div class="top-blocks">
-		    <div id="blocktopmidlt" class="block-region">
-		    <div class="region-content">
-                        <?php echo $OUTPUT->blocks_for_region('block-top-midlt') ?>
-                    </div>
-		    </div>
-		    </div>
-		    <div class="top-blocks">
-		    <div id="blocktopmidrt" class="block-region">
-		    <div class="region-content">
-                        <?php echo $OUTPUT->blocks_for_region('block-top-midrt') ?>
-                    </div>
-		    </div>
-		    </div>
-		    <div class="top-blocks">
-		    <div id="blocktopright" class="block-region">
-		    <div class="region-content">
-                        <?php echo $OUTPUT->blocks_for_region('block-top-right') ?>
-                    </div>
-		    </div>
-		    </div>
-		    </div>
-    <?php } ?>
-    <!-- End top of page blocks -->
-
-    <!-- The four blocks added to the bottom of the page in the grey zone -->
-    <?php if ($hasbtmblocks) { ?>
-		    <div id="btmblockwrap">
-		    <div class="btm-blocks">
-		    <div id="blockbtmleft" class="block-region">
-		    <div class="region-content">
-                        <?php echo $OUTPUT->blocks_for_region('block-btm-left') ?>
-                    </div>
-		    </div>
-		    </div>
-		    <div class="btm-blocks">
-		    <div id="blockbtmmidlt" class="block-region">
-		    <div class="region-content">
-                        <?php echo $OUTPUT->blocks_for_region('block-btm-midlt') ?>
-                    </div>
-		    </div>
-		    </div>
-		    <div class="btm-blocks">
-		    <div id="blockbtmmidrt" class="block-region">
-		    <div class="region-content">
-                        <?php echo $OUTPUT->blocks_for_region('block-btm-midrt') ?>
-                    </div>
-		    </div>
-		    </div>
-		    <div class="btm-blocks">
-		    <div id="blockbtmright" class="block-region">
-		    <div class="region-content">
-                        <?php echo $OUTPUT->blocks_for_region('block-btm-right') ?>
-                    </div>
-		    </div>
-		    </div>
-		    </div>
-    <?php } ?>
-    <!-- End bottom of page blocks -->
 
     </div>
 
