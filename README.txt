@@ -7,9 +7,16 @@ HRDNZ theme for use with Moodle 2.3 and
 issues are fixed.
 
 *****************************************
+************ CONTENT SLIDER *************
+
+Open layout/frontpage.php
+Open slidercontent/content.php
+Follow the instructions in the top few
+lines of those files. Slider will not
+work unless you follow those instructions!
 
 To put content in the slider, open
-slidercontent/content.htm and edit that
+slidercontent/content.php and edit that
 file.
 
 Each slide of content must be contained
