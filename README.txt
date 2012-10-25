@@ -1,5 +1,11 @@
 *****************************************
-************** HRDNZ Theme **************
+*********** HRDNZ Lite Theme ************
+*****************************************
+
+HRDNZ theme for use with Moodle 2.3 and
+2.4 until such a time as the custom blocks
+issues are fixed.
+
 *****************************************
 
 To put content in the slider, open
@@ -21,26 +27,6 @@ You can make up to nine slides at any one
 time. They are numbered automatically.
 
 **************** Updates ****************
-24/10/12
-- Fixed main content token.
-
-02/07/12
-- Fixed block regions for Moodle 2.3
-
-24/05/12
-- Reference to aerie in settings.php changed
-  to hrdnz.
-
-17/05/12
-- Made menus min-width 150 to fix anomaly
-  line wrap on Mac.
-- Sped up slideshow a little.
-- Fixed title word wrap.
-
-16/05/12
-- Reduced size of heading.
-- Made menus max-width 200 to fix them
-  going off browser window if too long.
-- Removed login notification from top-bar
-  and footer.
-- Slowed down the slideshow.
+25/10/12
+- Theme is born, based on HRDNZ theme
+  without the extra block regions.
