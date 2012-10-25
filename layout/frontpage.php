@@ -1,4 +1,10 @@
 <?php
+// ***************** IMPORTANT NOTICE ********************
+// The themedirectory will NEED to be changed to $themedirectory = "theme/hrdnz_lite";
+// if you want to use this on your site! This is so that it functions on my test
+// server only.
+$themedirectory = "../themes/hrdnz_lite";
+// ****************** END NOTICE ***********************
 
 $hasheading = ($PAGE->heading);
 $hasfooter = (empty($PAGE->layout_options['nofooter']));
@@ -51,8 +57,8 @@ echo $OUTPUT->doctype() ?>
     <!-- Slider start -->
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
     <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-    <link rel="stylesheet" type="text/css" href="theme/hrdnz/style/contentslider.css" />
-    <script type="text/javascript" src="theme/hrdnz/javascript/contentslider.js">
+    <link rel="stylesheet" type="text/css" href="<?= $themedirectory ?>/style/contentslider.css" />
+    <script type="text/javascript" src="<?= $themedirectory ?>/javascript/contentslider.js">
     <!--
     /***********************************************
     * Featured Content Slider- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
@@ -111,9 +117,9 @@ echo $OUTPUT->doctype() ?>
 			    
 			    featuredcontentslider.init({
 				    id: "slider1",  //id of main slider DIV
-				    contentsource: ["ajax", "theme/hrdnz/slidercontent/content.htm"],  //Valid values: ["inline", ""] or ["ajax", "path_to_file"]
-				    toc: ["<img src='theme/hrdnz/pix/1.png' />", "<img src='theme/hrdnz/pix/2.png' />", "<img src='theme/hrdnz/pix/3.png' />", "<img src='theme/hrdnz/pix/4.png' />", "<img src='theme/hrdnz/pix/5.png' />", "<img src='theme/hrdnz/pix/6.png' />", "<img src='theme/hrdnz/pix/7.png' />", "<img src='theme/hrdnz/pix/8.png' />", "<img src='theme/hrdnz/pix/9.png' />"],  //Valid values: "#increment", "markup", ["label1", "label2", etc]
-				    nextprev: ["<img src='theme/hrdnz/pix/left.png' />", "<img src='theme/hrdnz/pix/right.png' />"],  //labels for "prev" and "next" links. Set to "" to hide.
+				    contentsource: ["ajax", "<?= $themedirectory ?>/slidercontent/content.php"],  //Valid values: ["inline", ""] or ["ajax", "path_to_file"]
+				    toc: ["<img src='<?= $themedirectory ?>/pix/1.png' />", "<img src='<?= $themedirectory ?>/pix/2.png' />", "<img src='<?= $themedirectory ?>/pix/3.png' />", "<img src='<?= $themedirectory ?>/pix/4.png' />", "<img src='<?= $themedirectory ?>/pix/5.png' />", "<img src='<?= $themedirectory ?>/pix/6.png' />", "<img src='<?= $themedirectory ?>/pix/7.png' />", "<img src='<?= $themedirectory ?>/pix/8.png' />", "<img src='<?= $themedirectory ?>/pix/9.png' />"],  //Valid values: "#increment", "markup", ["label1", "label2", etc]
+				    nextprev: ["<img src='<?= $themedirectory ?>/pix/left.png' />", "<img src='<?= $themedirectory ?>/pix/right.png' />"],  //labels for "prev" and "next" links. Set to "" to hide.
 				    revealtype: "click", //Behavior of pagination links to reveal the slides: "click" or "mouseover"
 				    enablefade: [true, 0.2],  //[true/false, fadedegree]
 				    autorotate: [true, 3000],  //[true/false, pausetime]
