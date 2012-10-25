@@ -3,7 +3,9 @@
 // The themedirectory will NEED to be changed to $themedirectory = "theme/hrdnz_lite";
 // if you want to use this on your site! This is so that it functions on my test
 // server only.
+// Comment out the first line and uncomment the second line to use on your own site.
 $themedirectory = "../themes/hrdnz_lite";
+// $themedirectory = "theme/hrdnz_lite";
 // ****************** END NOTICE ***********************
 
 $hasheading = ($PAGE->heading);
